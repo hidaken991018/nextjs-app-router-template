@@ -1,11 +1,11 @@
-# next-app-router-template
+# レシピアプリ開発 07 チームのリポジトリ
 
 ## 技術スタック
 
 - 状態管理：Redux
 - CSS フレームワーク：tailwind
 - データフェッチ：SWR
-- テスティングフレームワーク : jest
+- テスティングフレームワーク : jest (未導入)
 - コンポーネント管理：storybook
 
 ## ディレクトリ構成

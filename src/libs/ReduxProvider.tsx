@@ -3,7 +3,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 
-import counterReducer from "../stores/counter"
+import counterReducer from "../stores/sampleCounter"
 
 const store = configureStore({
   reducer: {
