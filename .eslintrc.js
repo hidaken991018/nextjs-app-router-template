@@ -1,14 +1,18 @@
 module.exports = {
   root: true,
+  // ↓TypeScriptのルールを有効化する
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "@typescript-eslint", "import", "unused-imports"],
   extends: [
     "eslint:recommended",
+    // ↓初心者むけのルールセット
     "next/core-web-vitals",
+    // ↓プラグインの推奨ルールセットを使用する
     "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:import/warnings",
+    // ↓prettierと競合するeslintのルールを無効化する
     "prettier",
   ],
   rules: {
