@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { MantineProviderWrapper } from '@/libs/MantineProviderWrapper'
+import { ReduxProvider } from '@/libs/ReduxProvider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -16,9 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <MantineProviderWrapper>
-          {children}
-        </MantineProviderWrapper>
+        <ReduxProvider>
+          <MantineProviderWrapper>
+            {children}
+          </MantineProviderWrapper>
+        </ReduxProvider>
       </body>
     </html>
   )

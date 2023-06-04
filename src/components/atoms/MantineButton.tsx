@@ -1,7 +1,10 @@
 "use client";
 import { Button } from '@mantine/core';
-export const SampleMantineButton = () => {
+interface Props {
+    onClick: any;
+}
+export const SampleMantineButton = ({ onClick }: Props) => {
     return (
-        <Button>Hello</Button>
+        <Button onClick={onClick}>Hello</Button>
     )
 }
