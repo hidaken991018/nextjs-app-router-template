@@ -1,7 +1,8 @@
 "use client"
 
-import { RootState } from "@/libs/ReduxProvider"
 import { useSelector } from "react-redux"
+
+import { RootState } from "@/libs/ReduxProvider"
 
 /**
  * カウントを表示するコンポーネント

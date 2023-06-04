@@ -1,8 +1,9 @@
 'use client';
 
-import counterReducer from "../stores/counter"
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
+
+import counterReducer from "../stores/counter"
 
 const store = configureStore({
   reducer: {

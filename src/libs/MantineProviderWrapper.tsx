@@ -1,5 +1,6 @@
 "use client";
 import { MantineProvider } from '@mantine/core';
+
 interface Props {
     children: React.ReactNode;
 }

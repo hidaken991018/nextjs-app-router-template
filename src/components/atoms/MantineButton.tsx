@@ -1,7 +1,8 @@
 "use client";
 import { Button } from '@mantine/core';
+
 interface Props {
-    onClick: any;
+    onClick: () => void;
 }
 export const SampleMantineButton = ({ onClick }: Props) => {
     return (
